@@ -1,4 +1,4 @@
-# Phyloniches: Simultaneous inference of niche and niche evolution
+# NEMo: Niche Evolution Model
 
 This contains the codes used in paper: "Tracking niche change through time: simultaneous inference of environmental niche evolution and estimation of contemporary niches"
 By Xia Hua, Marcel Cardillo, and Lindell Bromham
