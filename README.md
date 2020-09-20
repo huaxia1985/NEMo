@@ -15,14 +15,14 @@ This repo gives information on:
 
 #### Step 1
 
-Download this github repository to your computer. From here on in, we'll assume that this is now located at `~/Desktop/Phyloniches/`
+Download this github repository to your computer. From here on in, we'll assume that this is now located at `~/Desktop/NEMo/`
 
 #### Step 2
 
 Source all the functions to R and load the related libraries
 
 ```r
-  file.sources = list.files(path = "~/Desktop/Phyloniches/", pattern="*.R", full.names = T)
+  file.sources = list.files(path = "~/Desktop/NEMo/", pattern="*.R", full.names = T)
   sapply(file.sources,source,.GlobalEnv)
 ```
 
@@ -30,7 +30,7 @@ Source all the functions to R and load the related libraries
 
 Replicating the simulation study
 
-The main code is in `~/Desktop/Phyloniches/simulation code/simmain`
+The main code is in `~/Desktop/NEMo/simulation code/simmain`
 
 The code leads you through each step to simulate a phylogeny and a set of species presence/absence locations, as well as run the analysis on the simulatd data.
 To use the code, simply run each line of the code.
@@ -151,7 +151,7 @@ This generates figure 3 in the paper.
 
 Replicating the case study
 
-The data is stored in `~/Desktop/Phyloniches/workfile`.
+The data is stored in `~/Desktop/NEMo/workfile`.
 
 'arid' for Acacia drought tolerance and 'salt' for Acacia salt tolerance
 
@@ -165,10 +165,10 @@ Each file includes:
 
 To use the data, load the file into R, using drought tolerance for example,
 ```r
-load("~/Desktop/Phyloniches/workfile/arid")
+load("~/Desktop/NEMo/workfile/arid")
 ```
 
-The main code is in `~/Desktop/Phyloniches/analysis code/main`.
+The main code is in `~/Desktop/NEMo/analysis code/main`.
 
 The code leads you through each step to run one MCMC on Acacia drought tolerance and Acacia salt tolerance.
 To use the code, simply run each line of the code.
@@ -195,7 +195,7 @@ There are three main results:
 
 #### Step 1
 
-Generating your data in the same format as the data in '~/Desktop/Phyloniches/workfile/arid'
+Generating your data in the same format as the data in '~/Desktop/NEMo/workfile/arid'
 
 The data includes:
 1) a dated phylogeny in a "phylo" class
@@ -274,7 +274,7 @@ for (i in 1:nspecies) {
 
 #### Step 2
 
-Analysing your data using the code in '~/Desktop/Phyloniches/analysis code/main'.
+Analysing your data using the code in '~/Desktop/NEMo/analysis code/main'.
 
 You may want to modify the initial parameter values and the prior hyperparameters, and run niche_mcmc multiple times for multiple MCMCs.
 
