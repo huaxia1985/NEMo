@@ -86,6 +86,7 @@ k <- c(0,0)
 ##### section 4: running the NEMo analysis on simulate data
 
 niche_mcmc(ngen)
+}
 
 ##### section 5: summarizing results from NEMo
 
@@ -206,7 +207,9 @@ event1corr[iii,aaa] <- sum(is.element(which(event1>0),core1))/length(which(event
 event1wron[iii,aaa] <- sum(!is.element(core1,which(event1>0)))/length(core1) #false positive rate to infer wrong speciation events
 event2corr[iii,aaa] <- sum(is.element(which(event2>0),core2))/length(which(event2>0)) #power to correctly infer true adaptation events
 event2wron[iii,aaa] <- sum(!is.element(core2,which(event2>0)))/length(core2) #false positive rate to infer wrong adaptation events
-
+}
+}
+					   
 #generate figure 3
 par(mfrow=c(2,6))
 boxplot(as.numeric(nichear2),ylim=c(0,1))
